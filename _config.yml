@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "encuetee's website"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : My personal website # site tagline that appears below site title in masthead
+name                     : "encuetee"
+description              : "In this website, you will find things about my learning journey."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -30,7 +30,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
+enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
@@ -68,7 +68,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "encuetee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I am an undergraduate student studying security."
+  location         : "Vietnam"
   email            :
   links:
     - label: "Email"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/encuetee"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/encuetee"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -227,7 +227,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Ho_Chi_Minh # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
@@ -309,6 +309,15 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  mathematics:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -318,8 +327,49 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
       read_time: true
-      comments: # true
+      author_profile: true
       share: true
+      comments: false
+      toc_sticky: true
       related: true
+      show_date: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      comments: false
+      toc_sticky: true
+      related: true
+      show_date: true
+  # _mathematics
+  - scope:
+      path: ""
+      type: mathematics
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      comments: false
+      toc_sticky: true
+      related: true
+      show_date: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      comments: false
+      toc_sticky: true
+      related: true
+      show_date: true
