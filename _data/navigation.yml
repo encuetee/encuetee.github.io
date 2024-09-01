@@ -6,6 +6,8 @@ main:
     url: /collection-archive/
   - title: "🗓 Posts"
     url: /year-archive/
+  - title: "📚 Categories"
+    url: /categories/
   - title: '🏷 Tags'
     url: /tags/
   - title: "Quick-Start Guide"
