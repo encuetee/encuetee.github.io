@@ -4,7 +4,7 @@ date: 2023-08-19 00:00:00 +0700
 categories:
   - Write-ups
 tags:
-  - 2023_corCTF
+  - 2023_BKCTF
   - Web Exploitation
   - Race conditions
 ---
