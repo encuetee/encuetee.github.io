@@ -331,6 +331,7 @@ defaults:
       author_profile: true
       share: true
       comments: false
+      toc: true
       toc_sticky: true
       related: true
       show_date: true
@@ -344,6 +345,7 @@ defaults:
       author_profile: true
       share: true
       comments: false
+      toc: true
       toc_sticky: true
       related: true
       show_date: true
@@ -357,6 +359,7 @@ defaults:
       author_profile: true
       share: true
       comments: false
+      toc: true
       toc_sticky: true
       related: true
       show_date: true
@@ -370,6 +373,7 @@ defaults:
       author_profile: true
       share: true
       comments: false
+      toc: true
       toc_sticky: true
       related: true
       show_date: true
